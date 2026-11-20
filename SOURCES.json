@@ -1,0 +1,47 @@
+{
+  "created_on": "2026-11-19",
+  "firmware": {
+    "directory": "nailong-firmware",
+    "upstream": "https://github.com/78/xiaozhi-esp32",
+    "base_project_version": "2.4.2",
+    "sdk": "ESP-IDF v5.5.5",
+    "local_baseline_commit": "454f3b482f240c4ca3fdf4218094261c88aba9e9",
+    "snapshot_includes_uncommitted_feature_work": true,
+    "identity_policy": "factory MAC; existing per-device board UUID or freshly generated UUID; no identity override/migration",
+    "export_changes": [
+      "removed identity migration source, config switches, profile and dedicated tests",
+      "general build script accepts --ota-url",
+      "course documentation and endpoint input tests"
+    ],
+    "latest_feature_hardware_confirmation": "voice motion-stop and BOOT keep-listening candidate still awaits user confirmation"
+  },
+  "backend": {
+    "directory": "xiaozhi-esp32-server",
+    "upstream": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+    "commit": "6afc54a17def47578a4b3efc4680873689d3168b",
+    "export_changes": [
+      "replaced one concrete upstream weather API key with YOUR_API_KEY"
+    ],
+    "entrypoint": "main/xiaozhi-server/app.py"
+  },
+  "course_profile": {
+    "configuration": "config/backend.example.yaml",
+    "discovery": "HTTP OTA port 8003",
+    "voice_transport": "WebSocket port 8000",
+    "intent": "function_call",
+    "mcp_tools": "provided by the device; laugh_walk combines audio and gait locally"
+  },
+  "excluded": [
+    "nested Git histories",
+    "personal identity profile",
+    "device Flash/NVS dumps",
+    "runtime keys/configuration",
+    "build outputs and downloaded dependencies",
+    "large runtime model weights"
+  ],
+  "assets": {
+    "prepared": "nailong-firmware/main/boards/otto-robot/nailong_assets",
+    "originals": "Materials",
+    "license_status": "media authorization details require publisher-provided records; see THIRD_PARTY_NOTICES.md"
+  }
+}

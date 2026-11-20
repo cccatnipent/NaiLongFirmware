@@ -1,0 +1,45 @@
+{
+  "image_format": "240x240 RGB565 little endian",
+  "images": {
+    "nl_idle.raw": {
+      "source": "9.raw",
+      "sha256": "fa3050d9bc0ff2e100c9be249c24592e72991afe147514f48f09c7d21dba3b65"
+    },
+    "nl_laugh.raw": {
+      "source": "2.raw",
+      "sha256": "382a1e1c8d893ff79f26fe95b97e525f058b1531e1ce122264abbfe8628359c2"
+    },
+    "nl_reply1.raw": {
+      "source": "1.raw",
+      "sha256": "e652c4b4e1f48d250d58c10e4e47d1c1975f36ee9f542fea1f5a143301f740eb"
+    },
+    "nl_reply2.raw": {
+      "source": "3.raw",
+      "sha256": "b0eb3c447b3427ff70e739df85f8f65467907ee319621290f5d884a5c542b023"
+    },
+    "nl_reply3.raw": {
+      "source": "4.raw",
+      "sha256": "f18c6d92c7b123ad005c5b946229e69d66c54d7a0ea623654903711e38beaec6"
+    },
+    "nl_reply4.raw": {
+      "source": "5.raw",
+      "sha256": "af4e5b391cf932a07dff6de9ac646b12358b62c9391a4aafcb2f48a64379da47"
+    },
+    "nl_reply5.raw": {
+      "source": "6.raw",
+      "sha256": "77a8f368a5a7e2ed7403ae2b2c1743f198f26787a26835a88a84667b5cc5f775"
+    },
+    "nl_reply6.raw": {
+      "source": "7.raw",
+      "sha256": "faae39d4020d2a9de60a6e55fa757487ede00d78f34c861596929c474bcc71e4"
+    },
+    "nl_reply7.raw": {
+      "source": "8.raw",
+      "sha256": "67740ba9d03f026d36db432f79e98dde0310449d6ded16e914b3ea92a9b737f5"
+    }
+  },
+  "audio_source": "奶龙大笑【原版】 [BV1p2Tp6REay_p1].ogg",
+  "laugh_seconds": 5.0,
+  "audio_format": "Ogg Opus, mono, 16000 Hz, 60 ms packets",
+  "audio_sha256": "ba59dc0328bd5d7b8935ab9d0012af4da8deb2034b77c2aedd81aea2463bfe45"
+}

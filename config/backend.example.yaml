@@ -1,0 +1,37 @@
+# Copy/merge target: xiaozhi-esp32-server/main/xiaozhi-server/data/.config.yaml
+# scripts/configure_backend.py fills the host, prompt and a fresh local auth key.
+server:
+  ip: 0.0.0.0
+  port: 8000
+  http_port: 8003
+  websocket: ws://YOUR_LAN_HOST:8000/xiaozhi/v1/
+  vision_explain: http://YOUR_LAN_HOST:8003/mcp/vision/explain
+  auth:
+    enabled: true
+    allowed_devices: []
+  mqtt_gateway: null
+  mqtt_signature_key: null
+  udp_gateway: null
+manager-api:
+  url: ""
+selected_module:
+  VAD: SileroVAD
+  ASR: FunASR
+  LLM: CourseLLM
+  TTS: EdgeTTS
+  Memory: nomem
+  Intent: function_call
+ASR:
+  FunASR:
+    language: zh
+LLM:
+  CourseLLM:
+    type: openai
+    base_url: https://YOUR_LLM_HOST/v1
+    model_name: YOUR_MODEL_NAME
+    api_key: YOUR_LLM_API_KEY
+Intent:
+  function_call:
+    functions: []
+end_prompt:
+  enable: false

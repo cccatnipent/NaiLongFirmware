@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.raw -text
+*.ogg -text
+*.png -text
+*.jpg -text
+*.gif -text
+*.mp3 -text
+*.ttf -text
+*.bin -text
+*.sh text eol=lf
